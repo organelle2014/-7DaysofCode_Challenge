@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Quizzes Done: "
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/quizzes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/score"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:hint="Questions Come Here..."
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/ans1"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Btn1"
+                android:gravity="center"
+                android:layout_below="@+id/quizzes" />
+            <Button
+                android:id="@+id/ans2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Btn2"
+                android:gravity="center"
+                android:layout_below="@+id/ans1"/>
+            <Button
+                android:id="@+id/ans3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Btn3"
+                android:gravity="center"
+                android:layout_below="@+id/ans2"/>
+            <Button
+                android:id="@+id/ans4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Btn4"
+                android:gravity="center"
+                android:layout_below="@+id/ans3"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
